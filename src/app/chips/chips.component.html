@@ -1,0 +1,15 @@
+<div
+  [ngStyle]="{
+    width: data.width,
+    borderRadius: data.border,
+    padding: data.padding,
+    backgroundColor: data.backgroudColor
+  }"
+  class="chips"
+>
+  <div class="child-container">
+    <img src="{{ data.icon }}" alt="" />
+    {{ data.name }}
+    <img (click)="onDeleteItem()" src="{{ data.cancelIcon }}" alt="" />
+  </div>
+</div>

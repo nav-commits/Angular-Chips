@@ -1,0 +1,15 @@
+<h1>Chips</h1>
+ <!-- <div class="input-container">
+  <input
+    class="chip-input"
+    type="text"
+    placeholder="Enter Information"
+    (keyup.enter)="add($event)"
+  />
+</div> -->
+
+<div class="container-chips">
+  <div *ngFor="let chip of chips ;let i = index ">
+    <app-chips (itemDeleted)="onItemDeleted(i)" [data]="chip"></app-chips>
+  </div>
+</div>
